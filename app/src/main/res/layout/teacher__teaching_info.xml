@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="100dp"
+    android:padding="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:padding="4dp"
+            android:background="@drawable/bg_teaching_working"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/teacher_name_item_teaching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Lê Hòa"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/while_color"
+                android:textSize="16dp"
+                android:fontFamily="monospace"/>
+            <TextView
+                android:id="@+id/teacher_phonenum_item_teaching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0774378865"
+                android:textColor="@color/while_color"
+                android:layout_below="@id/teacher_name_item_teaching"
+                android:layout_marginLeft="32dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="4dp"
+                android:fontFamily="monospace"/>
+            <TextView
+                android:id="@+id/teacher_email_item_teaching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nguyenduckhai91@gmail.com"
+                android:layout_below="@id/teacher_phonenum_item_teaching"
+                android:layout_marginLeft="32dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:textColor="@color/while_color"
+                android:fontFamily="monospace"
+                android:drawablePadding="4dp"/>
+            <TextView
+                android:id="@+id/teacher_course_item_teaching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xử Lý THS"
+                android:layout_below="@id/teacher_email_item_teaching"
+                android:layout_marginLeft="32dp"
+                android:drawableLeft="@drawable/ic_teaching"
+                android:textColor="@color/while_color"
+                android:fontFamily="monospace"
+                android:drawablePadding="4dp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/teacher_face_working"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/khai"
+        android:elevation="12dp"
+        android:layout_centerVertical="true"/>
+
+
+
+
+
+</RelativeLayout>

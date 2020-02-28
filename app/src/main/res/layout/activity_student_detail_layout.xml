@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".student_detail_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@color/black_color">
+    <ImageView
+        android:id="@+id/stu_detail_face"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:scaleType="fitXY"
+        android:transitionName="img_Trans"
+        android:src="@drawable/khai"/>
+        <TextView
+            android:id="@+id/stu_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Đức Khải"
+            android:textColor="@color/while_color"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="24dp"
+            android:paddingBottom="12dp"
+            android:textSize="24dp"
+            android:transitionName="name_Trans"
+            android:fontFamily="monospace"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_stu_detail"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stu_detail_phonenum"
+            android:text="0774378865"
+            android:textColor="@color/black_color"
+            android:textSize="20dp"
+            android:transitionName="phonenum_Trans"
+            android:fontFamily="sans-serif-smallcaps"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/stu_detail_phonenum"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/ic_phone_round"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/stu_detail_mess"
+            android:layout_marginRight="24dp"/>
+        <ImageView
+            android:id="@+id/stu_detail_mess"
+            android:layout_width="36dp"
+            android:layout_centerVertical="true"
+            android:layout_height="36dp"
+            android:src="@mipmap/ic_mess_round"
+            android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_below="@id/stu_detail_phonenum"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stu_detail_mail"
+            android:text="nguyenduckhai91@gmail.com"
+            android:layout_below="@+id/student_phonenum_item"
+            android:textColor="@color/black_color"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-smallcaps"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_gmail"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_below="@id/stu_detail_phonenum"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+
+            <TextView
+                android:id="@+id/stu_detail_mssv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123160050"
+                android:textSize="18dp"
+                android:transitionName="mssv_Trans"
+                android:textColor="@color/black_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_mssv_detail"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

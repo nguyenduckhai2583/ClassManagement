@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:focusableInTouchMode="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_txt_stu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_title_stu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/logo_txt_stu"
+        android:fontFamily="@font/atomic_age"
+        android:text="16 Embedded System"
+        android:textColor="@color/black_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cheating and Lazy"
+        android:layout_below="@id/txt_title_stu"
+        android:layout_toRightOf="@id/logo_txt_stu"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black_color"
+        android:fontFamily="monospace"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="3dp"
+        android:background="@color/black_color"
+        android:layout_marginTop="48dp"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:text="STUDENT LIST"
+        android:padding="5dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_text_schedule"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/while_color"/>
+
+    <EditText
+        android:id="@+id/stu_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:hint="Search here"
+        android:fontFamily="monospace"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:textSize="14sp"
+        android:drawablePadding="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_studentlist"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
